@@ -29,7 +29,7 @@ $ (2^3 3^2)/(3^2 2) $
 a. Como en el anterior ejercicio simplificamos usando la división de potencias con la misma base
 $n^x / n^y = n ^ (x-y)$ :
 
-$ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) times 3 ^ ( 2 - 2) = 3 ^ 0 ) = 2 ^ 2 times 3 ^ 0 $
+$ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) times 3 ^ ( 2 - 2) = 2 ^ 2 times 3 ^ 0 $
 
 b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
 $ 2 ^ 2 times 3 ^ 0 = 4 $
