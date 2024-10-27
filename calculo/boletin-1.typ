@@ -29,11 +29,24 @@ $ (2^3 3^2)/(3^2 2) $
 a. Como en el anterior ejercicio simplificamos usando la división de potencias con la misma base
 $n^x / n^y = n ^ (x-y)$ :
 
-$ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) times 3 ^ ( 2 - 2) = 2 ^ 2 times 3 ^ 0 $
+$ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) dot 3 ^ ( 2 - 2) = 2 ^ 2 dot 3 ^ 0 $
 
 b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
-$ 2 ^ 2 times 3 ^ 0 = 4 $
+$ 2 ^ 2 dot 3 ^ 0 = 4 $
 
 #set heading()
 = Calcular:
-$ (2 3/9 :3)/((9/4)^2 (2/5)^(-1)) $
+$ (2 (3/9) :3)/((9/4)^2 (2/5)^(-1)) $
+
+a. Resolver el numerador:
+
+$ (2 dot 1/3 dot 1/3)/((9/4)^2 (2/5)^(-1))= (2/3 dot 1/3)/((9/4)^2 (2/5)^(-1)) = (2/9)/((9/4)^2 (2/5)^(-1)) $
+
+b. Resolver el denominador:
+
+$ (2/9)/((9/4)^2 (2/5)^(-1)) = (2/9)/(81/16 5/2) = (2/9)/(405/32) $
+
+c. Dividimos fracciones multiplicando el numerador por el inverso del denominador y obtenemos el resultado:
+
+$ (2/9)/(405/32) = 2 dot 32 / 9 dot 405 = 64 / 3645 $
+
