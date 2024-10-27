@@ -50,3 +50,5 @@ c. Dividimos fracciones multiplicando el numerador por el inverso del denominado
 
 $ (2/9)/(405/32) = 2 dot 32 / 9 dot 405 = 64 / 3645 $
 
+= Calcular y: 
+$ log_2 y^3 = 6 $
