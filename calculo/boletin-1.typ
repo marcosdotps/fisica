@@ -52,3 +52,16 @@ $ (2/9)/(405/32) = 2 dot 32 / 9 dot 405 = 64 / 3645 $
 
 = Calcular y: 
 $ log_2 y^3 = 6 $
+
+a. El exponente de $y$ pasa a multiplicar el logaritmo:
+
+$ 3 dot log_2 y = 6 $
+
+b. Dividimos ambos lados de la ecuación entre 3:
+
+$ log_2 y = 2 $
+
+c. Resolvemos usando  $log_a b = c <=> a^c = b$: 
+
+$ y = 2 ^ 2 = 4 $
+
