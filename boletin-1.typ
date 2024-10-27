@@ -20,4 +20,20 @@ $ a^5b^(-1)c^(13/2) $
 
 d. Podemos ir un paso más allá y eliminar exponentes negativos y fraccionarios:
 
-$ (a^5*sqrt(c^13))/b $
+$ (a^5 sqrt(c^13))/b $
+
+#set heading()
+= Calcular el cociente de potencias:
+$ (2^3 3^2)/(3^2 2) $
+
+a. Como en el anterior ejercicio simplificamos usando la división de potencias con la misma base
+$n^x / n^y = n ^ (x-y)$ :
+
+$ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) times 3 ^ ( 2 - 2) = 3 ^ 0 ) = 2 ^ 2 times 3 ^ 0 $
+
+b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
+$ 2 ^ 2 times 3 ^ 0 = 4 $
+
+#set heading()
+= Calcular:
+$ (2 3/9 :3)/((9/4)^2 (2/5)^(-1)) $
