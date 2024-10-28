@@ -11,7 +11,7 @@ $n^x / n^y = n ^ (x-y)$ :
 
 $ a^3/a^(-2) = a^(3 -(-2)) = a^5 $
 
-$ b^4 / b^5 = b^(4 - 5) = b ^-1 $
+$ b^4 / b^5 = b^(4 - 5) = b ^(-1) $
 
 $ c^7 / c^(1/2) = c^(7 - (1/2)) = c^(14/2 - 1/2) = c^(13/2) $
 
@@ -22,7 +22,6 @@ d. Podemos ir un paso más allá y eliminar exponentes negativos y fraccionarios
 
 $ (a^5 sqrt(c^13))/b $
 
-#set heading()
 = Calcular el cociente de potencias:
 $ (2^3 3^2)/(3^2 2) $
 
@@ -34,7 +33,6 @@ $ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) dot 3 ^ ( 2 - 2) = 2 ^ 2 dot 3 ^ 0 $
 b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
 $ 2 ^ 2 dot 3 ^ 0 = 4 $
 
-#set heading()
 = Calcular:
 $ (2 (3/9) :3)/((9/4)^2 (2/5)^(-1)) $
 
@@ -65,3 +63,13 @@ c. Resolvemos usando  $log_a b = c <=> a^c = b$:
 
 $ y = 2 ^ 2 = 4 $
 
+= Sea $log_10 2 = 0.3010$, calcula el siguiente logaritmo: $log_10 root(4, 8)$
+#linebreak()
+
+a. Resolvemos el logaritmo usando una incognita $x$ como resultado:
+$ log_10 root(4,8)=> 10^x = root(4,8) $
+
+b. Aplicamos $root(n,m)=m^(1/n)$
+$ 10^x = 8^(1/4) $
+
+c. Resolvemos:
