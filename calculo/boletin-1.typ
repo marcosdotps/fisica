@@ -72,4 +72,14 @@ $ log_10 root(4,8)=> 10^x = root(4,8) $
 b. Aplicamos $root(n,m)=m^(1/n)$
 $ 10^x = 8^(1/4) $
 
-c. Resolvemos:
+c. Resolvemos expresando ambos términos en logaritmos
+$ x dot log(10) = 1/4 dot log(8) $
+
+d. $log(10)$ es igual a 1:
+$ x = 1/4 dot log(8) $
+
+e. Aplicamos la regla de los logaritmos sabiendo que $8=2^3$
+$ x = 1/4 dot log(2^3) $ 
+
+f. Tenemos el valor de $log(2)$ en el enunciado, por lo que sustituimos y resolvemos:
+$ x = 1/4 dot 3 dot log(2) = 3/4 dot 0.3010 = 0.22575 $
