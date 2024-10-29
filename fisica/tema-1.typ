@@ -12,3 +12,5 @@ c. Para el radio, también usaremos una medida de longitud, por lo que será $L$
 d. Operamos en la fórmula:
 
 $ theta = L/L = 1 $
+
+e. El resultado se demuestra como adimensional.
