@@ -1,5 +1,7 @@
 #set heading(numbering: none)
 = Tema 1
+\ 
+\ 
 #line()
 === Ejercicio 1: Sabemos que en un círculo la medida de un ángulo en radianes es igual a la longitud del arco que intercepta (subtiende) dividida por la longitud del radio. Demuestra que el radián es una unidad adimensional.
 #linebreak()
@@ -16,7 +18,8 @@ d. Operamos en la fórmula:
 $ theta = L/L = 1 $
 
 e. El resultado se demuestra como adimensional.
-
+\ 
+\ 
 #line()
 
 === Ejercicio 2: Existe un parámetro en astrodinámica que se denomina "Parámetro de Tisserand" en honor al astrofísico francés que lo propuso. De acuerdo con el análisis dimensional de la ecuación para calcular el parámetro de Tisserand, ¿sería correcto afirmar que dicho parámetro es una magnitud física?
@@ -42,6 +45,8 @@ Podemos hacer el cálculo dimensional de para $T$ sabiendo que:
 
 5- Resolvemos y comprobamos que su resultado, al ser adimensional, implica que no es una magnitud física: 
 $ T = L/L + (2 dot sqrt(L/L (1- 1^2))) => "adimensional" $
-
+\ 
+\ 
 #line()
+
 === Ejercicio 3: Los siguientes modelos intentan predecir el caudal volumétrico Q de fluido (en $𝑚^3/𝑠$) a través de un pequeño orificio de área A en el costado de un tanque lleno de líquido hasta una altura H por encima del orificio: $Q=H sqrt(2"Ag") Q=A H^2 /g Q=A sqrt(2"Hg")$ ¿Cuál de las propuestas es dimensionalmente correcta?
