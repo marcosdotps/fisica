@@ -49,4 +49,10 @@ $ T = L/L + (2 dot sqrt(L/L (1- 1^2))) => "adimensional" $
 \ 
 #line()
 
-=== Ejercicio 3: Los siguientes modelos intentan predecir el caudal volumétrico Q de fluido (en $𝑚^3/𝑠$) a través de un pequeño orificio de área A en el costado de un tanque lleno de líquido hasta una altura H por encima del orificio: $Q=H sqrt(2"Ag") Q=A H^2 /g Q=A sqrt(2"Hg")$ ¿Cuál de las propuestas es dimensionalmente correcta?
+=== Ejercicio 3: Los siguientes modelos intentan predecir el caudal volumétrico Q de fluido (en $𝑚^3/𝑠$) a través de un pequeño orificio de área A en el costado de un tanque lleno de líquido hasta una altura H por encima del orificio: \ a. $Q=H sqrt(2"Ag")$ \ b. $Q=A H^2 /g$\ c. $Q=A sqrt(2"Hg")$ \ ¿Cuál de las propuestas es dimensionalmente correcta?
+\
+Considerando que el caudal se mide en $L^3/T$ podemos demostrar que la tercera expresión es correcta:
+
+$ Q = A sqrt(2"Hg") = L^2 sqrt(2(L dot L/T^2)) = $
+$ = L^2 sqrt(2 L^2/T^2) = L^2  L/T sqrt(2) = L^3/T dot sqrt(2) $
+
