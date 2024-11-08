@@ -83,3 +83,14 @@ $ x = 1/4 dot log(2^3) $
 
 f. Tenemos el valor de $log(2)$ en el enunciado, por lo que sustituimos y resolvemos:
 $ x = 1/4 dot 3 dot log(2) = 3/4 dot 0.3010 = 0.22575 $
+
+= Convierte los siguientes ángulos de radiantes a grados sexagesimales: 3 rad, 2π/5 rad, 3π/20.
+
+a. Para convertir ángulos radianes a grados sexagesimales usamos la siguiente fórmula: $1 "rad" = 180/pi​$ 
+
+- 3 rad:
+$ 3 dot 180/pi = 570/pi = 171.89degree $
+- $(2pi)/5 "rad"$:
+$ (2pi)/5 dot 180/pi = pi dot 180/5 = 113.09degree $
+- $(3pi)/20 "rad"$:
+$ (3pi)/20 dot 180/pi = (2pi)/20 dot 180 = 56.54degree $
