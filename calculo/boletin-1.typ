@@ -147,3 +147,32 @@ c^2 = 97927.078 - 73441 = 24486.078
 \
 c = sqrt(24486.078) = 156.480
 $
+== 9. Calcula sin usar la calculadora ni tablas trigonométricas: $cos (5pi)/12 , cos (7pi)/6$
+=== a. $ cos 5pi/12$: 
+\
+Sabemos que $2pi$ es igual a 360 grados, por lo que:
+
+$ cos 5pi/12 = cos ((2pi)/12 + (2pi)/12 + pi/12) = 
+\ 
+= cos (30degree + 30degree + 15degree) $
+
+Ahora utilizamos angulos conocidos y la fórmula del coseno de suma de ángulos:
+
+$
+cos (45degree + 30degree) = cos 45degree dot cos 30degree - sin 45degree dot sin 35degree = 
+\ 
+= sqrt(2)/2 dot sqrt(3)/2 - sqrt(2)/2 dot 1/2 = 
+\
+= (sqrt(6) - sqrt(2))/4
+$
+
+=== b. $ cos (7pi)/6$:
+\
+$ cos(7pi)/6 = cos((2pi)/6 + (2pi)/6 + (2pi)/6 + pi/6) =
+\
+= cos(60degree) dot cos(60degree) dot cos(60degree) dot cos(30degree) - sin(60degree) dot  sin(60degree) dot sin(60degree) dot sin(30degree) =
+\
+= (1/2 dot 1/2 dot 1/2 dot sqrt(3)/2) -   (sqrt(3)/2 dot sqrt(3)/2 dot sqrt(3)/2 dot 1/2) =
+\
+= (  sqrt(3)/16 - (3 sqrt(3))/16) = -sqrt(3)/8
+$
