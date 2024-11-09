@@ -1,6 +1,6 @@
 #set page(height: auto)
-#set heading(numbering: "1.")
-= Simplifica la siguiente expresión con potencias: 
+#set heading()
+== 1. Simplifica la siguiente expresión con potencias: 
 $ (a^3b^4c^7)/(a^(-2)b^5sqrt((c))) $
 
 a. Reescribimos la raiz como una potencia elevada a la fracción de exponente fraccionario:
@@ -22,7 +22,7 @@ d. Podemos ir un paso más allá y eliminar exponentes negativos y fraccionarios
 
 $ (a^5 sqrt(c^13))/b $
 
-= Calcular el cociente de potencias:
+== 2. Calcular el cociente de potencias:
 $ (2^3 3^2)/(3^2 2) $
 
 a. Como en el anterior ejercicio simplificamos usando la división de potencias con la misma base
@@ -33,7 +33,7 @@ $ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) dot 3 ^ ( 2 - 2) = 2 ^ 2 dot 3 ^ 0 $
 b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
 $ 2 ^ 2 dot 3 ^ 0 = 4 $
 
-= Calcular:
+== 3. Calcular:
 $ (2 (3/9) :3)/((9/4)^2 (2/5)^(-1)) $
 
 a. Resolver el numerador:
@@ -48,7 +48,7 @@ c. Dividimos fracciones multiplicando el numerador por el inverso del denominado
 
 $ (2/9)/(405/32) = 2 dot 32 / 9 dot 405 = 64 / 3645 $
 
-= Calcular y: 
+== 4. Calcular y: 
 $ log_2 y^3 = 6 $
 
 a. El exponente de $y$ pasa a multiplicar el logaritmo:
@@ -63,9 +63,8 @@ c. Resolvemos usando  $log_a b = c <=> a^c = b$:
 
 $ y = 2 ^ 2 = 4 $
 
-= Sea $log_10 2 = 0.3010$, calcula el siguiente logaritmo: $log_10 root(4, 8)$
-#linebreak()
-
+== 5. Sea $log_10 2 = 0.3010$, calcula el siguiente logaritmo: $log_10 root(4, 8)$
+\
 a. Resolvemos el logaritmo usando una incognita $x$ como resultado:
 $ log_10 root(4,8)=> 10^x = root(4,8) $
 
@@ -84,13 +83,67 @@ $ x = 1/4 dot log(2^3) $
 f. Tenemos el valor de $log(2)$ en el enunciado, por lo que sustituimos y resolvemos:
 $ x = 1/4 dot 3 dot log(2) = 3/4 dot 0.3010 = 0.22575 $
 
-= Convierte los siguientes ángulos de radiantes a grados sexagesimales: 3 rad, 2π/5 rad, 3π/20.
-
-a. Para convertir ángulos radianes a grados sexagesimales usamos la siguiente fórmula: $1 "rad" = 180/pi​$ 
-
+== 6. Convierte los siguientes ángulos de radiantes a grados sexagesimales: 3 rad, 2π/5 rad, 3π/20.
+\
+Para convertir ángulos radianes a grados sexagesimales usamos la siguiente fórmula: $1 "rad" = 180/pi​$ 
+\
+\
 - 3 rad:
 $ 3 dot 180/pi = 570/pi = 171.89degree $
 - $(2pi)/5 "rad"$:
 $ (2pi)/5 dot 180/pi = pi dot 180/5 = 113.09degree $
 - $(3pi)/20 "rad"$:
 $ (3pi)/20 dot 180/pi = (2pi)/20 dot 180 = 56.54degree $
+
+== 7. Sabiendo que $cos alpha = 1/4$  y que el ángulo está en el primer cuadrante, calcular las restantes razones trigonométricas para dicho ángulo.
+\
+a. Usamos la identidad pitagórica: 
+$ sin^2 alpha + cos^2 alpha = 1 $
+
+b. Sustituimos el valor conocido para obtener $sin alpha$:
+$ 
+sin^2 alpha + (1/4)^2  = 1 
+\
+sin^2 alpha = 1 - 1/16
+\ 
+sin^2 alpha = 16/16 - 1/16 = 15/16
+\
+sin alpha = sqrt(15)/sqrt(16) = sqrt(15)/4
+$
+c. Calculamos el resto de razones trigonométricas:
+$
+tan alpha = sin/cos = (sqrt(15)/4) / (1/4)= sqrt(15)
+\
+cot alpha = 1/tan alpha = 1/sqrt(15) = 1/sqrt(15) dot sqrt(15)/sqrt(15) = sqrt(15)/ 15
+\
+sec alpha = 1/cos alpha = 1 / (1/4) = 4
+\
+csc alpha = 1/sin alpha = 1 / sqrt(15)/4 = 4/sqrt(15) dot sqrt(15)/sqrt(15) = 4sqrt(15)/15
+$
+
+== 8. Calcula la altura de una torre de refrigeración de una central nuclear sabiendo que la sombra mide 271 metros cuando los rayos solares forman un ángulo de 30˚. 
+\
+En este caso la sombra que proyecta será el cateto de la base de un triángulo rectángulo. Sabemos que el ángulo agudo que forma la sombra de la torre será de $30degree$. Los dos ángulos agudos deben sumar $90degree$ entre ellos, por lo que si uno es de $30degree$ el otro tendrá $60degree$. 
+\
+\
+Además sabemos que para un triágulo rectángulo el $cos$ relaciona el cateto adyacente con la hipotenusa por lo que podemos obtenerla: 
+
+$ cos alpha = "cateto adyacente"/"hipotenusa" 
+\
+cos 30 = 271 / "h"
+\
+0.866 = 271 / "h"
+\
+"h" = 271 / 0.866 = 312.933
+$
+\
+Ahora con el Teorema de Pitágoras calculamos el otro cateto, que queda definido por la torre:
+$
+h^2 = c^2 + c^2
+\
+312^2 = c^2 + 271^2
+\
+c^2 = 97927.078 - 73441 = 24486.078
+\
+c = sqrt(24486.078) = 156.480
+$
