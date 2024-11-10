@@ -112,7 +112,7 @@ sin alpha = sqrt(15)/sqrt(16) = sqrt(15)/4
 $
 c. Calculamos el resto de razones trigonométricas:
 $
-tan alpha = sin/cos = (sqrt(15)/4) / (1/4)= sqrt(15)
+tan alpha = sin alpha / cos alpha = (sqrt(15)/4) / (1/4)= sqrt(15)
 \
 cot alpha = 1/tan alpha = 1/sqrt(15) = 1/sqrt(15) dot sqrt(15)/sqrt(15) = sqrt(15)/ 15
 \
@@ -123,29 +123,23 @@ $
 
 == 8. Calcula la altura de una torre de refrigeración de una central nuclear sabiendo que la sombra mide 271 metros cuando los rayos solares forman un ángulo de 30˚. 
 \
-En este caso la sombra que proyecta será el cateto de la base de un triángulo rectángulo. Sabemos que el ángulo agudo que forma la sombra de la torre será de $30degree$. Los dos ángulos agudos deben sumar $90degree$ entre ellos, por lo que si uno es de $30degree$ el otro tendrá $60degree$. 
+La altura de la torre es el cateto opuesto a ángulo de $30 degree$. La sombra de la torre es el cateto adyacente a ese mismo ángulo. Para resolver este problema usamos la tangente que relaciona el angulo con el cateto opuesto y el cateto adyacente.
 \
 \
-Además sabemos que para un triágulo rectángulo el $cos$ relaciona el cateto adyacente con la hipotenusa por lo que podemos obtenerla: 
-
-$ cos alpha = "cateto adyacente"/"hipotenusa" 
+$tan alpha = "cateto opuesto"/"cateto adyacente" $
 \
-cos 30 = 271 / "hipotenusa"
+$alpha = 30 degree $
 \
-0.866 = 271 / "hipotenusa"
+$"cateto adyacente" = "sombra" = 271"m"$
 \
-"hipotenusa" = 271 / 0.866 = 312.933
+$ "cateto opuesto" = "altura de la torre"$
+\
+\
+Resolvemos:
 $
+tan(30degree) = "altura"/ 271
 \
-Ahora con el Teorema de Pitágoras calculamos el otro cateto, que queda definido por la torre:
-$
-h^2 = c^2 + c^2
-\
-312^2 = c^2 + 271^2
-\
-c^2 = 97927.078 - 73441 = 24486.078
-\
-c = sqrt(24486.078) = 156.480
+"altura" = 271 dot 0.577 approx 156.27"m"
 $
 == 9. Calcula sin usar la calculadora ni tablas trigonométricas: $cos (5pi)/12 , cos (7pi)/6$
 === a. $ cos 5pi/12$: 
