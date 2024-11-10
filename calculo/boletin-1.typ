@@ -216,3 +216,19 @@ cos 210degree = -sqrt(3)/2
 sin 105degree = plus.minus sqrt((1- (-sqrt(3)/2))/2) = plus.minus sqrt((2+ sqrt(3))/4) = plus.minus sqrt(2+sqrt(3))/2
 $
 El seno de $105degree$ está en el segundo cuadrante es positivo, por lo que elegimos como resultado $ sin 105 degree = sqrt(2+sqrt(3))/2$.
+\
+\
+Calculamos la tangente sustituyendo en la fórmula y racionalizando el denominador:
+$
+tan 105 degree = plus.minus sqrt((1+ sqrt(3)/2)/(1- sqrt(3)/2)) = plus.minus sqrt((2+ sqrt(3))/(2- sqrt(3)))
+\
+tan 105 degree = plus.minus sqrt(((2+sqrt(3))^2)/((2-sqrt(3))(2+sqrt(3))))
+\
+tan 105 degree = plus.minus sqrt((4+3+4sqrt(3))/1) = plus.minus sqrt(7+4sqrt(3))
+$
+Nos quedamos con el valor negativo ya que la $105degree$ está en el segundo cuadrante, por lo que $tan 105 degree = sqrt(7+4sqrt(3))$.
+
+Solución:
+$ sin 105 degree = sqrt(2+sqrt(3))/2 $
+$ cos 105 degree = -(sqrt(2-sqrt(3)))/2 $
+$ tan 105 degree = sqrt(7+4sqrt(3)) $
