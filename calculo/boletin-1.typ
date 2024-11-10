@@ -176,3 +176,43 @@ $ cos(7pi)/6 = cos((2pi)/6 + (2pi)/6 + (2pi)/6 + pi/6) =
 \
 = (  sqrt(3)/16 - (3 sqrt(3))/16) = -sqrt(3)/8
 $
+
+== 10. Calcular el seno, el coseno y la tangente de 105˚ en función del ángulo 210˚:
+\
+Podemos utilizar el ángulo mitad, aplicado sus reglas:
+$
+sin alpha/2 = plus.minus sqrt((1 - cos alpha)/2)
+\
+cos alpha/2 = plus.minus sqrt((1 + cos alpha)/2)
+\
+tan alpha/2 = plus.minus sqrt((1 - cos alpha)/(1 + cos alpha))
+$
+\
+Por lo que: 
+$
+cos 105degree = plus.minus sqrt((1 + cos 210degree)/2)
+$
+Calculamos $cos 210 degree$:
+$
+cos 210degree = (cos 180degree dot cos 30degree ) - (sin 180degree dot sin 30)
+\
+cos 210degree = -1 dot sqrt(3)/2 - (0 dot 1/2)
+\
+cos 210degree = -sqrt(3)/2
+$
+Hallamos el coseno de 105:
+$
+cos 105degree = plus.minus sqrt((1 - sqrt(3)/2 )/2) = plus.minus (sqrt((2 - sqrt(3))/4)) = plus.minus (sqrt(2-sqrt(3)))/2
+$
+Sabemos que el coseno de $105degree$ está en el segundo cuadrante, por lo que su signo será negativo. Por lo que $cos 105 degree = -(sqrt(2-sqrt(3)))/2$ es el resultado válido.
+\
+\ 
+Para el seno:
+$
+sin 105degree = plus.minus sqrt((1- cos 210 degree)/2)
+\
+cos 210degree = -sqrt(3)/2
+\
+sin 105degree = plus.minus sqrt((1- (-sqrt(3)/2))/2) = plus.minus sqrt((2+ sqrt(3))/4) = plus.minus sqrt(2+sqrt(3))/2
+$
+El seno de $105degree$ está en el segundo cuadrante es positivo, por lo que elegimos como resultado $ sin 105 degree = sqrt(2+sqrt(3))/2$.
