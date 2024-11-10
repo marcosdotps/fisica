@@ -3,7 +3,7 @@
 == 1. Simplifica la siguiente expresión con potencias: 
 $ (a^3b^4c^7)/(a^(-2)b^5sqrt((c))) $
 
-a. Reescribimos la raiz como una potencia elevada a la fracción de exponente fraccionario:
+a. Reescribimos la raíz como una potencia elevada a la fracción de exponente fraccionario:
 $ (a^3b^4c^7)/(a^(-2)b^5c^(1/2)) $
 
 b. Simplificamos los términos a, b y c usando la división de potencias con la misma base
@@ -30,7 +30,7 @@ $n^x / n^y = n ^ (x-y)$ :
 
 $ (2^3 3^2)/(3^2 2) = 2 ^ ( 3 - 1 ) dot 3 ^ ( 2 - 2) = 2 ^ 2 dot 3 ^ 0 $
 
-b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como 
+b. Cualquier número elevado a 0 es igual a 1 por lo que la operación se resolvería como :
 $ 2 ^ 2 dot 3 ^ 0 = 4 $
 
 == 3. Calcular:
@@ -46,7 +46,7 @@ $ (2/9)/((9/4)^2 (2/5)^(-1)) = (2/9)/(81/16 5/2) = (2/9)/(405/32) $
 
 c. Dividimos fracciones multiplicando el numerador por el inverso del denominador y obtenemos el resultado:
 
-$ (2/9)/(405/32) = 2 dot 32 / 9 dot 405 = 64 / 3645 $
+$ (2/9)/(405/32) = (2 dot 32) / (9 dot 405) = 64 / 3645 $
 
 == 4. Calcular y: 
 $ log_2 y^3 = 6 $
@@ -55,7 +55,7 @@ a. El exponente de $y$ pasa a multiplicar el logaritmo:
 
 $ 3 dot log_2 y = 6 $
 
-b. Dividimos ambos lados de la ecuación entre 3:
+b. Dividimos ambos miemberos de la ecuación entre 3:
 
 $ log_2 y = 2 $
 
@@ -65,19 +65,19 @@ $ y = 2 ^ 2 = 4 $
 
 == 5. Sea $log_10 2 = 0.3010$, calcula el siguiente logaritmo: $log_10 root(4, 8)$
 \
-a. Resolvemos el logaritmo usando una incognita $x$ como resultado:
-$ log_10 root(4,8)=> 10^x = root(4,8) $
+a. Resolvemos el logaritmo usando una incógnita $x$ como resultado:
+$ x = log_10 root(4,8)=> 10^x = root(4,8) $
 
-b. Aplicamos $root(n,m)=m^(1/n)$
+b. Aplicamos $root(n,m)=m^(1/n)$:
 $ 10^x = 8^(1/4) $
 
-c. Resolvemos expresando ambos términos en logaritmos
+c. Resolvemos expresando ambos términos en logaritmos:
 $ x dot log(10) = 1/4 dot log(8) $
 
 d. $log(10)$ es igual a 1:
 $ x = 1/4 dot log(8) $
 
-e. Aplicamos la regla de los logaritmos sabiendo que $8=2^3$
+e. Aplicamos la regla de los logaritmos sabiendo que $8=2^3$:
 $ x = 1/4 dot log(2^3) $ 
 
 f. Tenemos el valor de $log(2)$ en el enunciado, por lo que sustituimos y resolvemos:
@@ -89,11 +89,11 @@ Para convertir ángulos radianes a grados sexagesimales usamos la siguiente fór
 \
 \
 - 3 rad:
-$ 3 dot 180/pi = 570/pi = 171.89degree $
+$ 3 dot 180/pi = 570/pi = 171.89 degree $
 - $(2pi)/5 "rad"$:
-$ (2pi)/5 dot 180/pi = pi dot 180/5 = 113.09degree $
+$ (2pi)/5 dot 180/pi = (2 dot 180)/5 = 72 degree $
 - $(3pi)/20 "rad"$:
-$ (3pi)/20 dot 180/pi = (2pi)/20 dot 180 = 56.54degree $
+$ (3pi)/20 dot 180/pi = (3 dot 180)/20 = 27 degree $
 
 == 7. Sabiendo que $cos alpha = 1/4$  y que el ángulo está en el primer cuadrante, calcular las restantes razones trigonométricas para dicho ángulo.
 \
@@ -130,11 +130,11 @@ Además sabemos que para un triágulo rectángulo el $cos$ relaciona el cateto a
 
 $ cos alpha = "cateto adyacente"/"hipotenusa" 
 \
-cos 30 = 271 / "h"
+cos 30 = 271 / "hipotenusa"
 \
-0.866 = 271 / "h"
+0.866 = 271 / "hipotenusa"
 \
-"h" = 271 / 0.866 = 312.933
+"hipotenusa" = 271 / 0.866 = 312.933
 $
 \
 Ahora con el Teorema de Pitágoras calculamos el otro cateto, que queda definido por la torre:
