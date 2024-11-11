@@ -130,12 +130,18 @@ $
 \
 == 3. Consideremos la matriz $mat(a, a-2, a-6; 1,1,3; 2+a, a, a)$ , para qué valores de $a$ la matriz no es inversible? 
 \
-Para que una matriz no sea inversible, su determinante debe ser igual a 0, por lo que planteamos el determinante de la matriz y lo igualamos a 0 para encontrar los valores de $a$ para los que la matriz no es inversible. Podemos aplicar la regla de Sarrus para encontrar el determinante de una matriz 3x3 de la siguiente forma despues de añadir dos filas a la matriz original:
+Una matriz es invertible si y solo si su determinante es distinto de cero. Por lo que planteamos el determinante de la matriz y lo igualamos a 0 para encontrar los valores de $a$ para los que la matriz es inversible. Podemos aplicar la regla de Sarrus para encontrar el determinante de una matriz 3x3 de la siguiente forma despues de añadir dos filas a la matriz original:
 $
 m = mat(a, a-2, a-6; 1,1,3; 2+a, a, a; a, a-2, a-6; 1,1,3;)
 $
 a) Para hallar el determinante multiplicamos las diagonales principales con dos filas añadidas, de izquierda a derecha y sumamos los resultados y le restamos los productos de las diagonales secundarias:
 $
   det m = (a dot 1 dot a)  + (1 dot a dot (a-6)) + ((2+a) dot (a-2) dot 3)  - ( 1 * (a-2) * a) + (a * a * 3) + ((2+a) * 1 * (a - 6))
+\
+  det m = (a^2 + a^2 - 6a + 3a^2 - 12) - (a^2 - 4a -12 + 3a^2 + a^2 - 2a) 
+\
+  det m = 5a^2 - 10a - 12 - a^2 + 4a + 12 - 3a^2 - a^2 + 2a 
+\
+  det m = 0
 $
-b) Al resolver vemos que el determinante siempre será 0 ya que todas las a se simplifican. Por ello, *para todo valor de $a$ la matriz es inversible.*
+b) Al resolver vemos que el determinante siempre será 0 ya que todas las $a$ se simplifican. Por ello, *para todo valor de $a$ la matriz es inversible.*
