@@ -4,11 +4,9 @@
 Realiza la sustitución de la ecuación 2 en la ecuación 3 para llegar a obtener una expresión de θ(r). Una vez conseguida la ecuación de θ(r), despeja r en función de θ, para obtener así r. Continua ahora empleando la ecuación 1, para obtener una expresión de r(θ) dependiente de las variables iniciales del problema v1, v2, tc. Esta última ecuación que has obtenido (ecuación 4) será la que empleemos más adelante para dibujar gráficamente la parte no lineal del recorrido. 
 \
 === Ecuación 2:
-\
 $ r(t) = v_1(t - t_i) + D quad forall quad t> t_i  $
 
 === Ecuación 3:
-\
 $ theta(t) = sqrt((v_2/v_1)^2 - 1) ln(1 + (v_1(t - t_i))/ D) quad forall quad t> t_i $
 
 === Sustitución y hallar ecuación 4:
