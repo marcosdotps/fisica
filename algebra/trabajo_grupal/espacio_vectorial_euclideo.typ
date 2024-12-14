@@ -149,7 +149,7 @@ inset: 5pt,
 outset: 10pt
 )
 #set align(left)
-
+\
 Para saber si esta solución es única, vemos si el determinante de la matriz formada por los tres vectores $w_1,w_2$ y $w_3$ es igual a 0:
 
 $
