@@ -213,11 +213,20 @@ outset: 10pt
 \
 \ 
 De las condiciones dadas extraemos que $y=0$ junto con que $2x-t = 0 therefore t=2x$. Por ello podemos expresar los vectores en $S$ como $(x,0,z,2x)$. Expresamos ahora el vector general dando valores a las variables libres $x$ y $z$:
+
 $
   (x,0,z,2x) = x(1,0,0,2)+ z(0,0,1,0)
-  \
-  B = {(1,0,0,2),(0,0,1,0)} and dim(S)=2
 $
+
+#set align(center)
+#rect($B = {(1,0,0,2),(0,0,1,0)} and dim(S)=2$,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\ 
 === b) Sea el subespacio vectorial T=〈(1,2,3,4),(0,1,0,0),(1,0,2,0)〉. Calcula su dimensión y una base.
 \
 
