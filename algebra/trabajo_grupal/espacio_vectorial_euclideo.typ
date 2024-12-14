@@ -85,9 +85,7 @@ $
 #set align(left)
 
 == Ejercicio 2
-Sean los vectores en $RR^4$ dados por: $(2,2,a,a),(0,-1,0,-1),(b,2,a,-1),(a,a,a,-4)$.
-
-¿Qué condición deben verificar a y b de forma que estos vectores sean linealmente independientes?
+=== a) Sean los vectores en $RR^4$ dados por: $(2,2,a,a),(0,-1,0,-1),(b,2,a,-1),(a,a,a,-4)$. \ ¿Qué condición deben verificar a y b de forma que estos vectores sean linealmente independientes?
 
 Para que los vectores sean linealmente independientes, el determinante de la matriz formada por los vectores debe ser distinto de 0. 
 
@@ -118,10 +116,45 @@ Por lo que $a$ y $b$ deben cumplir que:
 \
 #set align(center)
 #rect(
-$  a^3 + 3a^2 + 2a - 2a^2 b - 2a b eq.not O  $,
+$  a^3 + 3a^2 + 2a - 2a^2 b - 2a b eq.not 0  $,
 fill: rgb("#c7ddb5"), 
 radius: 5pt, 
 stroke: 1pt + black, 
 inset: 5pt, 
 outset: 10pt
 )
+
+#set align(left)
+\
+=== b) 	Dado el vector $v=(1,2,3)$. Expresar $v$ como combinación lineal de los vectores $w_1=(1,0,0),w_2=(1,1,0)$ y $w_3=(1,0,-2)$. ¿Se podría expresar de dos formas distintas? Justifica tu respuesta.
+\
+Planteamos la ecuación y resolvemos los componentes de v como combinación lineal de $w_1$, $w_2$ y $w_3$:
+$
+  (1,2,3) = c_1(1,0,0) + c_2(1,1,0) + c_3(1,0,-2)
+  cases(
+    1=c_1+c_2+c_3,
+    2=c_2,
+    3=-2c_3
+  )
+  \
+  c_1 = 1/2 , c_2 = 2 , c_3= -3/2
+$
+#set align(center)
+#rect(
+$ v = 1/2v_1 + 2v_2 - 3/2v_3 $,
+fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+
+Para saber si esta solución es única, vemos si el determinante de la matriz formada por los tres vectores $w_1,w_2$ y $w_3$ es igual a 0:
+
+$
+  mdet(1,1,0;0,1,0;0,0,-2) = 1((1 dot) - (2 - 0)) - 0 + 0 = -2
+$
+
+Al ser su determinante distinto de cero los vectores son linealmente independientes y la combinación lineal con $v_1$ por tanto es única. Esto ocurre porque $w_1, w_2$ y $w_3$ forman una base para el subespacio que definen y garantiza que la combinación lineal con el vector $v$ es única. Si no fuesen linealmente independientes podrían existir infinitas combinaciones lineales.
+
