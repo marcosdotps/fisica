@@ -118,7 +118,7 @@ Por lo que $a$ y $b$ deben cumplir que:
 \
 #set align(center)
 #rect(
-$mdet(A) =  a^3 + 3a^2 + 2a - 2a^2 b - 2a b$,
+$mdet(A) =  a^3 + 3a^2 + 2a - 2a^2 b - 2a b eq.not O  $,
 fill: rgb("#c7ddb5"), 
 radius: 5pt, 
 stroke: 1pt + black, 
