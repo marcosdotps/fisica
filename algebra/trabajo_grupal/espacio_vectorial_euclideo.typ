@@ -193,7 +193,7 @@ $
   \
   2(lambda x) + 2(lambda y) - lambda t = 2(lambda x) + 2(0) - lambda t = lambda (2x - t)=0
 $
-Por lo tanto cumple el producto por escalar tambien satisface las ecuaciones que definen el conjunto.
+Por lo tanto cumple que el producto por escalar tambien satisface las ecuaciones que definen el conjunto.
 
 Ahora usamos el vector $(0,0,0,0)$ para comprobar si se cumplen las ecuaciones:
 $
