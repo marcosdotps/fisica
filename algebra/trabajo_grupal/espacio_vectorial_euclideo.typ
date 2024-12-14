@@ -334,3 +334,71 @@ outset: 10pt
 )
 #set align(left)
 
+== Ejercicio 4\ 
+=== Sea la matriz:\
+$ 
+  M = mat(
+    1,-2;
+    2,-1;
+    4,1;
+  )
+$
+
+=== a) Comprueba que M tiene columnas ortogonales
+
+Para esto necesitamos comprobar que el producto escalar entre sus dos columnas da cero:
+
+$ m_1 dot m_2 = (1)(-2) + (2)(-1) + (4)(1) = 0 $
+
+\
+\
+#set align(center)
+#rect("Ya que "+$m_1 dot m_2 =0$+" sabemos que son ortogonales."
+,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\
+
+=== b) Construye la matriz $M_2$ añadiendo el vector $e_3 = (1,0,0) exists RR^3$ como última columna de M. Aplica el proceso de Gram-Schmidt a las columnas de $M_2$ para ortonormalizarlas.
+$
+  M_2 = mat(
+    1,-2,1;
+    2,-1,0;
+    4,1,0;
+  )
+$
+
+Proceso de Gram-Schmidt convierte un conjunto de vectores lineales en ortonormales y se aplica de la siguiente manera:
+
+1. Ortornormalización de $m_1 = mat(1;2;4;)$ será $n_1$:
+
+$
+  norm(m_1) = sqrt(1^2 + 2^2 + 4^2) = sqrt(21)
+  \
+  n_1 = 1/sqrt(21) dot mat(1;2;4;) = mat(1/sqrt(21);2/sqrt(21);4/sqrt(21);)
+$
+
+2. Ortornormalización de $m_2$ para la cual debemos restar la proyección de $m_2$ sobre $n_1$ y normalizar el resultado:
+
+$
+  "proj"_(u_1)m_2  = (m_2 dot n_1) n_1
+  \
+  m_2 dot n_1 = (-2 (1/sqrt(21))) + (-1 (2/sqrt(21)))+ (1 (4/sqrt(21))) = 0/sqrt(21) = 0
+$
+
+$m_2$ ya es ortogonal a $n_1$, por lo que $n_2$ es simplemente $m_2$ normalizado:
+$
+  norm(m_2) = sqrt((-2)^2 + (-1)^2 + 1^2) = sqrt(6)
+  \
+  n_2 = 1/sqrt(6) dot mat(-2;-1;1;) = mat(-2/sqrt(6);-1/sqrt(6);1/sqrt(6);)
+$
+
+3. Ortonormalizar $m_3$, restando las proyecciones de $m_3$ sobre $n_1$ y $n_2$ y después normalizando el resultado:
+
+$ ... $
+
+
