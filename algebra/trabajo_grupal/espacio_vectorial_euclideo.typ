@@ -156,5 +156,71 @@ $
   mdet(1,1,0;0,1,0;0,0,-2) = 1((1 dot) - (2 - 0)) - 0 + 0 = -2
 $
 
-Al ser su determinante distinto de cero los vectores son linealmente independientes y la combinación lineal con $v_1$ por tanto es única. Esto ocurre porque $w_1, w_2$ y $w_3$ forman una base para el subespacio que definen y garantiza que la combinación lineal con el vector $v$ es única. Si no fuesen linealmente independientes podrían existir infinitas combinaciones lineales.
+Al ser su determinante distinto de cero los vectores son linealmente independientes y: 
+#set align(center)
+#rect("la combinación lineal con "+$v$+" es por tanto única.",fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+Esto ocurre porque $w_1, w_2$ y $w_3$ forman una base para el subespacio que definen y garantiza que la combinación lineal con el vector $v$ es única. Si no fuesen linealmente independientes podrían existir infinitas combinaciones lineales.
+
+== Ejercicio 3
+=== a) Demuestra que el conjunto: $S={(x,y,z,t) in RR^4  | 2x+2y-t=0,y=0}$ es un subespacio vectorial de $RR^4$. Calcula su dimensión y una base.
+\
+Para que sea un subespacio vectorial la suma y el producto por escalar de dos vectores en el conjunto deben estar dentro de lo definido por las ecuaciones. Además debe contener el vector $(0,0,0,0)$. 
+\
+\
+Veamos si la suma de $v_1=(x_1,y_1,z_1,t_1)$ y $v_2=(x_2,y_2,z_2,t_2)$ están en $S$:
+\
+$
+  y_1=0 and y_2 = 0 therefore y_1 + y_2=0
+$
+
+$ 
+  2x_1 + 2y_1 - t_1 = 0 and 2x_2 + 2y_2 - t_2 = 0 therefore 2(x_1+x_2)+2(y_1+y_2)-(t_1+t_2) = 0
+  \
+  2(x_1+x_2)-(t_1+t_2) = 0 
+$
+Se demuestra así que la suma de dos vectores cumplen las ecuaciones que definen el conjunto.
+\
+\
+Para el producto por escalar, asumimos $lambda in RR$ :
+$
+  y=0 therefore lambda y = 0
+  \
+  2(lambda x) + 2(lambda y) - lambda t = 2(lambda x) + 2(0) - lambda t = lambda (2x - t)=0
+$
+Por lo tanto cumple el producto por escalar tambien satisface las ecuaciones que definen el conjunto.
+
+Ahora usamos el vector $(0,0,0,0)$ para comprobar si se cumplen las ecuaciones:
+$
+2x+2y-t=0 therefore 2(0) + 2(0) - 0 = 0
+\
+y = 0 therefore (0) = 0
+$
+Se cumple para el vector 0.
+#set align(center)
+#rect("Queda demostrado que "+$S$+" es un subespacio vectorial de "+$RR^4$+".",fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\
+\ 
+De las condiciones dadas extraemos que $y=0$ junto con que $2x-t = 0 therefore t=2x$. Por ello podemos expresar los vectores en $S$ como $(x,0,z,2x)$. Expresamos ahora el vector general dando valores a las variables libres $x$ y $z$:
+$
+  (x,0,z,2x) = x(1,0,0,2)+ z(0,0,1,0)
+  \
+  B = {(1,0,0,2),(0,0,1,0)} and dim(S)=2
+$
+=== b) Sea el subespacio vectorial T=〈(1,2,3,4),(0,1,0,0),(1,0,2,0)〉. Calcula su dimensión y una base.
+\
+
+=== c) Obtén la dimensión y una base de los subespacios S∩T y S+T.
+\
 
