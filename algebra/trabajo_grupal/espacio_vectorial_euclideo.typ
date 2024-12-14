@@ -229,7 +229,108 @@ outset: 10pt
 \ 
 === b) Sea el subespacio vectorial T=〈(1,2,3,4),(0,1,0,0),(1,0,2,0)〉. Calcula su dimensión y una base.
 \
-
-=== c) Obtén la dimensión y una base de los subespacios S∩T y S+T.
+El proceso se basa en verificar la independencia lineal de los vectores. Vamos a reducir la matriz formada por los vectores a su forma escalonada:
+$
+  A = mat(
+    1,2,3,4;
+    0,1,0,0;
+    1,0,2,0;
+  )
+  \
+  T_3 ' = T_3 - T_1  = (0,-2,-1,-4)
+  \
+  T_3 '' = (T_2 dot 2) + (T_3 ') = (0,2,0,0) + (0,-2,-1,-4) = (0, 0, -1 , -4)
+  \
+  T_3 ''' = T_3 dot -1 = (0, 0, 1, 4)
 \
+  A = mat(
+    1,2,3,4;
+    0,1,0,0;
+    0,0,1,4;
+  )
+$
+\
+La matriz tiene tres filas no nulas después de la reducción por lo que:
+\
+\
+#set align(center)
+#rect("la dimensión del subespacio definido por "+ $T=〈(1,2,3,4),(0,1,0,0),(1,0,2,0)〉$ +" es 3 y al no anularse sus filas, los vectores dados son linealmente independientes y forman una base en "+ $RR^3$+"."
+,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\ 
+
+=== c) Obtén la dimensión y una base de los subespacios $S sect T$ y $S+T$.
+\
+Sabemos que la base de $S=〈(1,0,0,2),(0,0,1,0)〉$ y la base de $T=〈(1,2,3,4),(0,1,0,0),(1,0,2,0)〉$. Además sabemos que $dim(S)=2$ y $dim(T)=3$, ya que es el número de vectores linealmente independientes. Para encontrar $S sect T$ debemos resolver las ecuaciones que describen ambos subespacios. Los de $S$ ya los tenemos y cualquier vector será en la forma $(x,0,z,2x)$. En $T$ será la combinación lineal de sus bases:
+
+$
+  v= c_1(1,2,3,4)+c_2(0,1,0,0)+c_3(1,0,2,0) = (c_1+c_3 , 2c_1 + c_2, 3c_1 + 2c_3, 4c_1 )
+$
+
+Ahora si $S sect T$ entonces:
+$
+  cases(
+    x = c_1+c_3,
+    0 = 2c_1 + c_2,
+    z = 3c_1 + 2c_3,
+    2x = 4c_1,
+  )
+  \
+  2x = 4c_1 therefore x = 2c_1
+  \
+  x = c_1 + c_3 therefore 2c_1 = c_1 + c+3 therefore c_1 = c_3
+  \
+  0 = 2c_1 + c_2 therefore c_2 = -2c_1
+  \
+  z = 3c_1 + 2c_3 therefore z = 3c_1 + 2c_1 = 5c_1
+$
+\
+De la resulción del sistema de ecuaciones anterior vemos que $S sect T$ puede expresarse como $(2c_1,0,5c_1, 4c_1)$ que sacando factor común quedaría $c_1(2,0,5,4)$. Entonces podemos afirmar que:
+\
+\
+#set align(center)
+#rect($"Base de "S sect T = (2,0,5,4) and dim(S sect T)=1$
+,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\ 
+\
+La suma de $S+T$ son los vectores que pueden escribirse como suma de un vector $S$ y un vector $T$. Debemos verificar que son linealmente independientes:
+
+$
+  A = mat(
+    1, 0, 1, 0, 1;
+    0, 0, 2, 1, 0;
+    0, 1, 3, 0, 2;
+    2, 0, 4, 0, 0;
+  )
+  \
+  A = mat(
+    1, 0, 1, 0, 1;
+    0, 0, 2, 1, 0;
+    0, 1, 3, 0, 2;
+    0, 0, 0, 0, -4;
+  )
+$
+Vemos que la base de $S+T$ estará formada por los cuatro vectores ya que son linealmente independientes. Por tanto: 
+\
+\
+#set align(center)
+#rect("Base de "+$S+T={(1,0,0,2),(0,0,1,0),(1,2,3,4),(0,1,0,0),(1,0,2,0)} and dim(S+T)=4$
+,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
 
