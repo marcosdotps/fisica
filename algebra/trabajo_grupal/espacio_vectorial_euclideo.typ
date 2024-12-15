@@ -16,7 +16,7 @@ Sea $M_(b_1,b_2)$ la matriz de cambio de base de $B_1$ a $B_2$. Para hallarla de
 $
  (1,2,0) = x(1,0,1)+ y(0,1,1) + z(0,0,2)
  \
- (1,2,0) = (x, 0, x)+(0,y,y)+(0,0,2z) = (x, y+2z, x+2z)
+ (1,2,0) = (x, 0, x)+(0,y,y)+(0,0,2z) = (x, y, x+y+2z)
 $
 
 Lo que resulta en un sistema formado por tres ecuaciones:
@@ -24,60 +24,61 @@ Lo que resulta en un sistema formado por tres ecuaciones:
 $
   cases(
     x = 1,
-    y+2z = 2,
-    x+2z=0
+    y = 2,
+    x + y + 2z=0
   )
   \
-  x=1, z = -1/2, y = 3 
+  x=1, y = 2, z = -3/2
 $
 Ya tenemos las tres coordenadas de $(1,2,0)$ respecto a la base $b_2$:
 
 $
-M_(b_1,b_2) = mat(1,...,...;3,...,...;-1/2,...,...)
+M_(b_1,b_2) = mat(1,...,...;2,...,...;-3/2,...,...)
 $
 
 Ahora ya sólo cambian los valores del sistema para adaptarlos a los otros vectores de $B_1$:
 $
   cases(
     x = 1,
-    y+2z = 0,
-    x+2z = 0
+    y = 0,
+    x+y+2z = 0
   )
 \
-x=1, z=-1/2, y=1 
+x=1, y=0 , z=-1/2
 $
 
 $
   cases(
     x = 0,
-    y+2z = 1,
-    x+2z = 2
+    y = 1,
+    x+y+2z = 2
   )
   \
-  x=0, z = 1, y = -1 
+  x=0, y = 1, z = 1/2
 $
 \
 #set align(center)
 #rect(
 $
-M_(b_1,b_2) = mat(1,0,0;3,1,1;-1/2,-1/2,1)
+M_(b_1,b_2) = mat(1,1,0;2,0,1;-3/2, -1/2,1/2)
 $, fill: rgb("#c7ddb5"), radius: 5pt, stroke: 1pt + black, inset: 5pt, outset: 10pt
 )
 \
 #set align(left)
 === b) ¿Cuáles son las coordenadas del vector $v=(2,1,1)_(B_1)$ en la base $B_2$?
 $
-  cases(
-    x = 2,
-    y+2z = 1,
-    x+2z = 1
-  )
+  v_(B_2) = mat(1,1,0;2,0,1;-3/2, -1/2,-1/2) dot mat(2;1;1)
   \
+  v_1 = 1(2) + 1(1) + 0(1) = 3
+  \
+  v_2 = 2(2) + 0(1) + 1(1) = 5
+  \
+  v_3 = -3/2(2) + (-1/2)(1) +  (1/2)(1) = -6/2 - 1/2 + 1/2 = -6/2 = -3
 $
 #set align(center)
 #rect(
 $
-  v_(B_2)=(2, 2,-1/2)
+  v_(B_2)=(3,5,-3)
 $
 , fill: rgb("#c7ddb5"), radius: 5pt, stroke: 1pt + black, inset: 5pt, outset: 10pt
 )
