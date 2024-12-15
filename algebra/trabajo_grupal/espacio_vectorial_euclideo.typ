@@ -398,7 +398,79 @@ $
 $
 
 3. Ortonormalizar $m_3$, restando las proyecciones de $m_3$ sobre $n_1$ y $n_2$ y después normalizando el resultado:
+$ m _3 = mat(1;0;0) $
+$
+  "proj"(m_3)_(n_1)  = ((m_3^T dot n_1)/(n_1^T dot n_1))dot n_1 = 1/sqrt(21) dot mat(1;2;4)
+  \
+  "proj"(m_3)_(n_2)  = ((m_3^T dot n_2)/(n_2^T dot n_2))dot n_1 = -2/sqrt(6) dot mat(-2;-1;1)
+$
+Ahora operamos:
+\
+$
+  n_3 = m_3 - "proj"(m_3)_(n_1) - "proj"(m_3)_(n_2) = mat(1;0;0) - 1/sqrt(21) mat(1;2;4) - 2/sqrt(6) mat(-2;-1;1)
+  \
+  mat(sqrt(21)-1/sqrt(21); - 2/ sqrt(21); -4/ sqrt(21)) - 2/sqrt(6) mat(-2;-1;1) = mat((sqrt(21)-1)/sqrt(21) + 4/sqrt(6); -2/sqrt(21)+ 2/sqrt(6); -4/sqrt(21) - 2/sqrt(6))
+  \
+$
+Calculamos la norma de m_3:
+$
+  norm(m_3) = sqrt(((sqrt(21)-1)/sqrt(21) + 4/sqrt(6))^2 + (-2/sqrt(21)+ 2/sqrt(6))^2 + (-4/sqrt(21) - 2/sqrt(6))^2)
+$
 
-$ ... $
+Y finalmente podemos calcular 
+\
+$
+n_3 = m_3 / norm(m_3) = mat(2.414; 0.379;-1.688) dot 1/2.972 = mat(0.813;0.128;-0.5685)
+$
 
+=== c) 	Forma la matriz A con las columnas de $M_2$ ortonormales y comprueba que $A$ es una matriz ortogonal, es decir, $A^T A=I$.
+\
+Para esto multiplicaremos la transpuesta de A por la matriz formada por las columnas de $M_2$ ortonormalizadas anteriormente:
+$
+  A^T A = mat(
+    1, approx 0 ,  approx 0;
+    approx 0, 1 , approx 0;
+    approx 0, approx 0 , 1
+  )
+$
+\
+\
+#set align(center)
+#rect("Se demuestra que es ortogonal ya que el resultado es la matriz identidad."
+,fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\
+\
+=== d)	Calcula las coordenadas del vector (-1,-3,2) en la base de R^3 formada por las columnas de A.
 
+Resolvemos para ello el sistema de ecuaciones haciendo uso de la propiedad de ortonormalidad que dice que el producto de un vector por otro vector ortonormal es igual a la proyección del vector sobre esa base.
+
+$ 
+  v = c_1 a_1 + c_2 a_2 + c_3 a_3 
+\
+  c_1 = v dot a_1 = (-1) dot (0.2182) + (-3) dot (0.436) + (2) dot (0.872)
+\
+  c_2 = v dot a_2  = (-1) dot (-0.816) + (-3) dot (-0.408) + (2) dot (0.408)
+\
+  c_3 = v dot a_3 = (-1) dot (0.534) + (-3) dot (-0.802) + (2) dot (0.267)
+$
+
+El resultado es por tanto:
+
+\
+\
+#set align(center)
+#rect( $ v = 0.218a_1, 2.857a_2, 2.405a_3$,
+fill: rgb("#c7ddb5"), 
+radius: 5pt, 
+stroke: 1pt + black, 
+inset: 5pt, 
+outset: 10pt
+)
+#set align(left)
+\
