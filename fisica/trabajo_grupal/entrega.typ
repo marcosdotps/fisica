@@ -35,13 +35,15 @@ $
 
 === Apartado c:
 
-Si se aparta medio metro, estará a $r = 49.5$. La fuerza centrífuga aumentará y la fricción no cambiará. 
+_*nota:*_ se ha calculado el rozamiento necesario en base a que el hombre se encuentra a 0.5m del centro debido a que se comentó en una clase, aunque la redacción es dudosa.
+
+Si se aparta medio metro del centro, estará a $r = 0.5"m"$. La fuerza centrífuga aumentará y la fricción no cambiará. 
 
 $
-mu >= 1^2 dot 49.5 / 9.8 approx 5.05
+mu >= 1^2 dot 0.5 / 9.8 approx approx 
 $
 
-Si el coeficiente de rozamiento es menor que este valor, el hombre saldrá despedido.
+Si se aparta 
 \
 \
 == Ejercicio 2
@@ -111,7 +113,7 @@ Sustituimos los valores dados:
 - $F_f = 0.2 dot (20 + 10 ) dot 9.8 dot 0.643 = 37.8"N"$
 - $F_f_2 = 0.3 dot 10 dot 9.8 = 29.4"N"$
 
-Por tanto la aceleración es $a = 82.9 / (20 + 10) approx 2.76 "m/s"$^2$$ de lo que deducimos que es hacia abajo ya que la fuerza neta es positiva en esa dirección.
+Por tanto la aceleración es $a = 82.9 / (20 + 10) approx 2.76 "m/s"^2$ de lo que deducimos que es hacia abajo ya que la fuerza neta es positiva en esa dirección.
 === Apartado b:
 La distancia recorrida por el bloque A se puede calcular con la ecuación de movimiento rectilíneo uniformemente acelerado (MRUA) en la dirección paralela al plano inclinado. La ecuación es:
 
@@ -223,7 +225,7 @@ $
   \
   E_c_c = 464969.57 = 1/2 m v^2
   \
-  v = sqrt((2 dot E_c_c)/m))
+  v = sqrt((2 dot E_c_c)/m)
   \
   v = 96.43"m/s"
 $
@@ -247,7 +249,7 @@ $
   \
   E_c_d = 451178.12 = 1/2 m v^2
   \
-  v = sqrt((2 dot E_c_d)/m))
+  v = sqrt((2 dot E_c_d)/m)
   \
   v = 94.99"m/s"
 $
@@ -267,7 +269,7 @@ $
   \
   E_c_e = 1/2 m v^2
   \
-  v = sqrt((2 dot E_c_e)/m))
+  v = sqrt((2 dot E_c_e)/m)
   \
   v = 94.99"m/s"
 $
@@ -308,7 +310,7 @@ $
   \
   E_c_d = 348498.55 = 1/2 m v^2
   \
-  v = sqrt((2 dot E_c_d)/m))
+  v = sqrt((2 dot E_c_d)/m)
   \
   v = 83.48"m/s"
 $
@@ -317,7 +319,7 @@ Corrección de d->e:
 $
     E_"e2" = E_"d2" + Delta E_p = 642498.55 - 294000 = 451178.12"J"
     \
-    v = sqrt((2 dot E_c_d)/m))
+    v = sqrt((2 dot E_c_d)/m)
     \
     v = 83.48"m/s"
 $
