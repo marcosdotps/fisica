@@ -35,7 +35,7 @@ $
 
 === Apartado c:
 
-Si se aparata medio metro, estará a $r = 49.5$. La fuerza centrífuga aumentará y la fricción no cambiará. 
+Si se aparta medio metro, estará a $r = 49.5$. La fuerza centrífuga aumentará y la fricción no cambiará. 
 
 $
 mu >= 1^2 dot 49.5 / 9.8 approx 5.05
