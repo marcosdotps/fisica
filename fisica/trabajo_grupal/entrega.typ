@@ -277,11 +277,47 @@ $
 Considerando que la enegría mecánica se conserva, todas se verán afectadas de igual manera y se reducirán en un 10%, por lo que podríamos repetir los cálculos para energías 10% menores a partir de b.
 
 $
-  E_b_2 = 0.9 E_b
+  E_"b2" = 0.9 E_b
+$
+
+Por lo que tendremos que revisar y aplicar la corrección:
+
+Corrección de b->c:
+$
+  E_b = E_a + Delta E_p - W_f = 953740 - 169540 - 19600 = 764600"J"
   \
-  E_c_2 = 0.9 E_c
+  E_"b2" = 0.9 E_b = 688140"J"
   \
-  E_d_2 = 0.9 E_d
+  E_p_"c2" = 100 dot 9.8 dot 332.5 = 325850"J"
   \
-  E_e_2 = 0.9 E_e
+  E_c_"c2" = E_b_2 - E_p_b = 688140 - 325850 = 394140"J"
+  \
+  E_c_"c2" = 362290 = 1/2 m v^2
+  \
+  v_"c2" = 85.12"m/s"
+$
+
+Corrección de c->d:
+
+$
+  E_"d2" = E_"c2" + Delta E_p - W_f = 688140 - 31850 - 13791.45 = 642498.55"J"
+  \
+  E_p_d = 100 dot 9.8 dot 300 = 294000"J"
+  \
+  E_c_d = E_"d2" - E_p_d = 642498.55 - 294000 = 348498.55"J"
+  \
+  E_c_d = 348498.55 = 1/2 m v^2
+  \
+  v = sqrt((2 dot E_c_d)/m))
+  \
+  v = 83.48"m/s"
+$
+
+Corrección de d->e:
+$
+    E_"e2" = E_"d2" + Delta E_p = 642498.55 - 294000 = 451178.12"J"
+    \
+    v = sqrt((2 dot E_c_d)/m))
+    \
+    v = 83.48"m/s"
 $
