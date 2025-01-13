@@ -1,4 +1,4 @@
-#set page(height: auto)
+#set page(paper: "a4", margin: 2cm)
 #set heading()
 == Ejercicio 1
 === Apartado a:
@@ -52,7 +52,7 @@ El bloque está en equilibrio sobre un plano inclinado de $theta = 30 degree$. L
 
 - Los resortes $K_1$ (comprimido) y $K_2$ (estirado.
 
-La suma de fuerzas debe ser cero en la dirección paralela al plano inclinado. Por lo tanto, la fuerza de los resortes debe ser igual y opuesta al peso. La fuerza de un resorte se define como $F_peso = K dot x$ donde $x$ es la elongación o compresión del resorte. Por lo tanto, $K_1 dot x - K_2 dot x = m dot g dot sin(theta)$.
+La suma de fuerzas debe ser cero en la dirección paralela al plano inclinado. Por lo tanto, la fuerza de los resortes debe ser igual y opuesta al peso. La fuerza de un resorte se define como $F_peso = K dot x$ donde $x$ es la elongación o compresión del resorte. Por lo tanto, $K_1 dot x + K_2 dot x = m dot g dot sin(theta)$.
 
 Generamos la ecuación para calcular x:
 
@@ -77,10 +77,10 @@ $
 Y resolvemos:
 
 $
-  x = 10 dot 9,8 dot sin(30degree) / (70 - 50) approx 2.45"m"
+  x = 10 dot 9,8 dot sin(30degree) / (70 + 50) approx 0.41"m"
 $
 
-Por lo tanto, la compresión/elongación de los resortes en la posición de equilibrio es de 2.45 metros.
+Por lo tanto, la compresión/elongación de los resortes en la posición de equilibrio es de 0.41 metros.
 \
 \
 == Ejercicio 3
